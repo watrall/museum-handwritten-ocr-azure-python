@@ -13,21 +13,21 @@ By the end you will:
 ---
 
 ## Table of Contents
-[ What you’ll need ](#what-youll-need)  
-[ Why Azure ](#why-azure)  
-[ Meet Azure Notebooks ](#meet-azure-notebooks)  
-[ Ethics, rights, and responsible handling ](#ethics-rights-and-responsible-handling)  
-1. [Create your Azure account and resources](#1-create-your-azure-account-and-resources)  
-2. [Upload your documents to Azure Blob Storage](#2-upload-your-documents-to-azure-blob-storage)  
-3. [Connect your Notebook to Azure services](#3-connect-your-notebook-to-azure-services)  
-4. [Process PDFs and run OCR with Azure AI Vision](#4-process-pdfs-and-run-ocr-with-azure-ai-vision)  
-5. [Turn raw text into structured fields](#5-turn-raw-text-into-structured-fields)  
-6. [Flag items for human review](#6-flag-items-for-human-review)  
-7. [Clean, standardize, and export](#7-clean-standardize-and-export)  
-8. [Data analysis and insights](#8-data-analysis-and-insights)  
-[ Contributing to this tutorial ](#contributing-to-this-tutorial)  
-[ Troubleshooting ](#troubleshooting)  
-[ Glossary (plain-English definitions) ](#glossary-plain-english-definitions)
+1. [ What you’ll need ](#what-youll-need)  
+2. [ Why Azure ](#why-azure)  
+3. [ Meet Azure Notebooks ](#meet-azure-notebooks)  
+4. [ Ethics, rights, and responsible handling ](#ethics-rights-and-responsible-handling)  
+5. [Create your Azure account and resources](#1-create-your-azure-account-and-resources)  
+6. [Upload your documents to Azure Blob Storage](#2-upload-your-documents-to-azure-blob-storage)  
+7. [Connect your Notebook to Azure services](#3-connect-your-notebook-to-azure-services)  
+8. [Process PDFs and run OCR with Azure AI Vision](#4-process-pdfs-and-run-ocr-with-azure-ai-vision)  
+9. [Turn raw text into structured fields](#5-turn-raw-text-into-structured-fields)  
+10. [Flag items for human review](#6-flag-items-for-human-review)  
+11. [Clean, standardize, and export](#7-clean-standardize-and-export)  
+12. [Data analysis and insights](#8-data-analysis-and-insights)  
+13. [ Contributing to this tutorial ](#contributing-to-this-tutorial)  
+14. [ Troubleshooting ](#troubleshooting)  
+15. [ Glossary (plain-English definitions) ](#glossary-plain-english-definitions)
 
 ---
 
@@ -318,7 +318,7 @@ We welcome improvements: typos, clearer explanations, new analyses. **Fork** thi
 
 ---
 
-## Glossary (plain-English definitions)
+## Glossary (beginner friendly definitions)
 - **Blob Storage**: Azure’s durable object store for files like PDFs/images.  
 - **Image Analysis (Azure AI Vision)**: Service that provides features like OCR (`VisualFeatures.READ`).  
 - **Resource Group**: A folder-like container for related Azure resources.  
