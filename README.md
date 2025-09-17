@@ -29,29 +29,29 @@ By the end you will:
 14. [ Troubleshooting ](#troubleshooting)  
 15. [ Glossary (plain-English definitions) ](#glossary-plain-english-definitions)
 
----
+
 
 ## What you’ll need
 A Microsoft account and access to the **Azure Portal**. You don’t need to install anything on your personal computer—everything runs in the browser via **Azure Machine Learning** notebooks. You’ll also want a few sample PDFs or images of handwritten records that you have the rights to process.
 
----
+
 
 ## Why Azure
 Think of **Microsoft Azure** as a massive, professional-grade digital workshop. Instead of buying individual tools and bringing them home, you get access to a fully equipped facility with specialized machines and services. For our project, we’ll use Azure for **storage** (Blob Storage), **AI** (Azure AI Vision: Image Analysis for OCR), and **compute** (Azure ML notebooks)—all designed to work smoothly together. This approach is powerful and **scalable**: it works for a handful of records or millions.
 
 **Free options:** Azure offers a **Free Account** with credits and services suitable for this tutorial. Students can use **Azure for Students** (credits, no credit card) if eligible.
 
----
+
 
 ## Meet Azure Notebooks
 Azure ML notebooks are your digital lab bench. You can place explanatory text right next to the code you run and see results—tables, logs, charts—inline. This **visual**, step-by-step environment is perfect for learners who want to understand *what* they’re doing and *why*.
 
----
+
 
 ## Ethics, rights, and responsible handling
 Museum and historical records can include sensitive personal data and culturally restricted knowledge. Work with permission, follow institutional and community guidance, and consider: copyright and use, privacy and sensitivity, cultural patrimony, and bias/limitations in data and models.
 
----
+
 
 ## 1. Create your Azure account and resources
 
@@ -68,7 +68,7 @@ Museum and historical records can include sensitive personal data and culturally
 
 > Tip: Use consistent names and the same region to reduce surprises.
 
----
+
 
 ## 2. Upload your documents to Azure Blob Storage
 
@@ -78,7 +78,7 @@ Museum and historical records can include sensitive personal data and culturally
 
 **Portal route:** Storage account → **Containers** → **+ Container** (private) → open it → **Upload** your PDFs / images.
 
----
+
 
 ## 3. Connect your Notebook to Azure services
 
@@ -120,7 +120,7 @@ print("Sample listing (first 5):", [b.name for _, b in zip(range(5), container_c
 
 > **Note:** Azure recommends **azure-ai-vision-imageanalysis** for OCR via **VisualFeatures.READ**. For text-heavy PDFs, Microsoft suggests **Document Intelligence (Read)**—but here we’ll convert PDFs to images first and use Image Analysis, which keeps our workflow simple for teaching.
 
----
+
 
 ## 4. Process PDFs and run OCR with Azure AI Vision
 
@@ -176,7 +176,7 @@ print("Pages OCRed:", len(df_raw_ocr))
 df_raw_ocr.head()
 ```
 
----
+
 
 ## 5. Turn raw text into structured fields
 
@@ -215,7 +215,6 @@ for idx, row in df.iterrows():
 df.head()
 ```
 
----
 
 ## 6. Flag items for human review
 
@@ -233,7 +232,7 @@ df["needs_review"] = df.apply(needs_review, axis=1)
 df[df["needs_review"]].head()
 ```
 
----
+
 
 ## 7. Clean, standardize, and export
 
@@ -261,7 +260,7 @@ df.to_json("museum_handwritten_records_azure.json", orient="records", indent=2, 
 "Exported museum_handwritten_records_azure.csv and museum_handwritten_records_azure.json"
 ```
 
----
+
 
 ## 8. Data analysis and insights
 
@@ -302,12 +301,12 @@ plt.title("Missing Values by Field"); plt.xlabel("Missing count")
 plt.tight_layout(); plt.show()
 ```
 
----
+
 
 ## Contributing to this tutorial
 We welcome improvements: typos, clearer explanations, new analyses. **Fork** this repo, make changes, and open a **Pull Request**. For bigger ideas, start a **Discussion/Issue** to gather feedback first.
 
----
+
 
 ## Troubleshooting
 - **ModuleNotFoundError for ImageAnalysis**: ensure `pip install azure-ai-vision-imageanalysis` and import `ImageAnalysisClient` from `azure.ai.vision.imageanalysis`.  
@@ -316,7 +315,7 @@ We welcome improvements: typos, clearer explanations, new analyses. **Fork** thi
 - **Quota limits**: free tier may limit requests—pause and retry later or choose a paid tier.  
 - **Slow OCR**: run on a **compute with GPU** (if available) or batch fewer pages per run.
 
----
+
 
 ## Glossary (beginner friendly definitions)
 - **Blob Storage**: Azure’s durable object store for files like PDFs/images.  
