@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this tutorial, please cite it as below."
+authors:
+  - family-names: Watrall
+    given-names: Ethan
+title: "Handwritten Museum Collections Records — Azure OCR to Data Analysis (Python)"
+version: "1.0.0"
+date-released: 2025-09-17

@@ -1,0 +1,8 @@
+azure-storage-blob
+azure-ai-vision-imageanalysis
+pandas
+matplotlib
+wordcloud
+pillow
+PyMuPDF
+pdf2image
