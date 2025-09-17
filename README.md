@@ -1,4 +1,4 @@
-# Handwritten Museum Collections Records — OCR → Structured Data → Data Analysis and Insights (Microsoft Azure)
+# Handwritten Museum Collections Records — OCR → Structured Data → Data Analysis and Insights (Microsoft Azure & Python)
 
 This tutorial shows you how to convert handwritten museum collection records (scans or PDFs) into structured data and then carry out **data analysis and insights** using **Microsoft Azure**. It is designed for **scholars, museum professionals, graduate students, and advanced undergraduates**. You do **not** need prior coding experience. We proceed carefully and conversationally.
 
